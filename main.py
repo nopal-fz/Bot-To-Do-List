@@ -7,12 +7,11 @@ from google.oauth2.service_account import Credentials
 
 load_dotenv()
 
-BOT_API = os.getenv("BOT_TOKEN")
+TELEGRAM_BOT_TOKEN = os.getenv("BOT_TOKEN")
 SERVICE_ACCOUNT_FILE = os.getenv("SERVICE_ACCOUNT_FILE")
 SPREADSHEET_KEY = os.getenv("SPREADSHEET_KEY")
 
 # Konfigurasi Telegram Bot
-TELEGRAM_BOT_TOKEN = BOT_API
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
 
 # Load kredensial
